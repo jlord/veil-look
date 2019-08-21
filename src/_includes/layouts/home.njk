@@ -17,7 +17,12 @@
       {%- endfor -%}
     </ul>
     
-    <h2>My frands</h2>
+    <h2>In this webring</h2>
+    <ul>
+      {%- for friend in friends -%}
+        <li><a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a> -- {{ friend.description }}</li>
+      {%- endfor -%}
+    </ul>
   </body>
   <script>
     
