@@ -5,11 +5,11 @@ title: hello world
 # hello world.
 
 Remember live journal and webrings and text? This is like that. 
-Use the Glitch communities to add people to your web ring. Clone this template to start your
+Use the Glitch collections to add people to your web ring. Clone this template to start your
 own journal. Write better copy here.
 
-# How to create a new blog
+## How to create a new blog
 // TODO
 
-# Your webring
+## Your webring
 // TODO

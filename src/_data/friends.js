@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 module.exports = async function() {
-  console.log( "Fetching your friends..." );
+  console.log( "Fetching your friends...", global.siteData);
 
   const collectionName = 'notwaldorf/frands';
   const baseUrl = 'https://api.glitch.com/v1/collections/by/fullUrl/projects?orderKey=createdAt&limit=50&orderDirection=ASC'
