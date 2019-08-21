@@ -35,7 +35,7 @@ this is what you should modify.
 [Webrings](https://en.wikipedia.org/wiki/Webring) are websites linked together. You know, your internet friends. 
 We use [Glitch collections](https://support.glitch.com/t/get-organized-with-collections/8038) to add your friends' blogs to your webring.
 1. Create a Glitch collection
-2. Add its name to [`src/_data/siteData.json`])(https://glitch.com/edit/#!/ballistic-piranha?path=src/_data/siteData.json:3:19), 
+2. Add its name to [`src/_data/siteData.json`](https://glitch.com/edit/#!/ballistic-piranha?path=src/_data/siteData.json:3:19), 
 in the "collection" field. For example, the 
   collection we're using in this sample is at [glitch.com/@notwaldorf/frands](https://glitch.com/@notwaldorf/frands"),
   so we added `"collection": "notwaldorf/frands"` to the config file.
