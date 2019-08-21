@@ -9,12 +9,7 @@
   </head>
   <body>
     {{ content | safe }}
-    <h2>Posts</h2>
-    <ul>
-    {%- for post in collections.all -%}
-      <li>{{ post.data.title }}</li>
-    {%- endfor -%}
-    </ul>
-
+    
+    <a href="/">Go back home </a>
   </body>
 </html>
