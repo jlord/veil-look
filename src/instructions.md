@@ -4,7 +4,7 @@ title: How to configure your blog
 ---
 # Instructions for survival
 
-## How to create your new blog
+## 🗣 How to create your new blog
 
 This here that you are reading is a Glitch project, so to create your own blog that is identical,
 you just have to remix this. You can click this! 
@@ -12,22 +12,32 @@ you just have to remix this. You can click this!
   <img alt="Remix on Glitch" src="https://cdn.gomix.com/f3620a78-0ad3-4f81-a271-c8a4faa20f86%2Fremix-button.svg">
 </a>
 
-### Add new posts
-All posts live in `src/`. Currently, there are 3 posts:
+### 📝 Add new posts
+All posts live in `src/`. There are 3 posts in this sample project:
   - `index.md`, the 🏡
   - `instructions.md`, which you are reading right now
   - `sample-post.md`, which is an example post that you can duplicate over and over again for new content.
 
 To create a new post, duplicate [`sample-post.md`](https://glitch.com/edit/#!/ballistic-piranha?path=src/sample-post.md:7:107), 
-and start writing!
+and start writing! Eleventy automatically ref
 
-### Customize it
+### 👩‍🎨 Customize it
+This blog is written using [eleventy](https://www.11ty.io/), which is a static site generator. The docs are pretty helpful,
+but the TL; DR is:
+- the "look" of the different pages is in `src/_includes/layouts`. There are two layouts in this project
+  - `home.njk`, used by the `index.md` post
+  - `post.njk`, used by all the other posts.
+- these are HTML + [Nunjucks](https://mozilla.github.io/nunjucks/) files, and if you want your pages to look different, 
+this is what you should modify.
+- the styles come from `css/style.css`
 
-## Your webring
-Use Glitch collections to add your friends' blogs to your webring.
-<ol>
-  <li>Create a Glitch collection</li>
-  <li>Add its name to <code>src/_data/siteData.json</code>, in the "collection" field. For example, the 
-  collection we're using in this sample is at <a href="https://glitch.com/@notwaldorf/frands">glitch.com/@notwaldorf/frands</a>,
-  so we added <code>"collection": "notwaldorf/frands"</code> to the config file.</li>
-</ol>
+## 💍 Webring
+[Webrings](https://en.wikipedia.org/wiki/Webring) are websites linked together. You know, your internet friends. 
+We use [Glitch collections](https://support.glitch.com/t/get-organized-with-collections/8038) to add your friends' blogs to your webring.
+1. Create a Glitch collection
+2. Add its name to [`src/_data/siteData.json`])(https://glitch.com/edit/#!/ballistic-piranha?path=src/_data/siteData.json:3:19), 
+in the "collection" field. For example, the 
+  collection we're using in this sample is at [glitch.com/@notwaldorf/frands](https://glitch.com/@notwaldorf/frands"),
+  so we added `"collection": "notwaldorf/frands"` to the config file.
+3. Start adding projects to that collection!
+3. That's it! The projects will be automatically populated (if you're interested, that code is here)
