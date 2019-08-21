@@ -16,7 +16,6 @@ module.exports = async function() {
       json.items.forEach(p => {
         friends.push({domain: p.domain, description: p.description, lastUpdate: p.updatedAt});
       });
-      console.log(friends);
       return friends;
     });
 };
