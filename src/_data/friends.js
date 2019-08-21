@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const config = require("./siteData.json");
 
 module.exports = async function() {
-  console.log( "Fetching your friends...", global.siteData);
+  console.log( "Fetching your friends...");
 
   const collectionName = config.collection;
   const baseUrl = 'https://api.glitch.com/v1/collections/by/fullUrl/projects?orderKey=createdAt&limit=50&orderDirection=ASC'

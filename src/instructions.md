@@ -19,7 +19,7 @@ All posts live in `src/`. There are 3 posts in this sample project:
   - `sample-post.md`, which is an example post that you can duplicate over and over again for new content.
 
 To create a new post, duplicate [`sample-post.md`](https://glitch.com/edit/#!/ballistic-piranha?path=src/sample-post.md:7:107), 
-and start writing! Eleventy automatically ref
+and start writing! Eleventy automatically refreshes your site for you, so you don't have to do anything else 🤞.
 
 ### 👩‍🎨 Customize it
 This blog is written using [eleventy](https://www.11ty.io/), which is a static site generator. The docs are pretty helpful,
@@ -40,4 +40,5 @@ in the "collection" field. For example, the
   collection we're using in this sample is at [glitch.com/@notwaldorf/frands](https://glitch.com/@notwaldorf/frands"),
   so we added `"collection": "notwaldorf/frands"` to the config file.
 3. Start adding projects to that collection!
-3. That's it! The projects will be automatically populated (if you're interested, that code is here)
+3. That's it! The projects will be automatically populated (if you're interested, that code is 
+[here](https://glitch.com/edit/#!/ballistic-piranha?path=src/_data/friends.js:11:6))

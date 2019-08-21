@@ -13,8 +13,7 @@
     "include": [
       "watch.json$",
       ".eleventy.js$",
-      "src/_data/",
-      "css"
+      "css/style.css"
     ]
   },
   "throttle": 1000
