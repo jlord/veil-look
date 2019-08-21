@@ -10,22 +10,18 @@
   <body>
     {{ content | safe }}
     
-    <h2>All posts</h2>
+    <h2>💌 All posts</h2>
     <ul>
       {%- for post in collections.all -%}
         <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
       {%- endfor -%}
     </ul>
     
-    <h2>In this webring</h2>
+    <h2>💍 My webring of friends</h2>
     <ul>
       {%- for friend in friends -%}
         <li><a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a> -- {{ friend.description }}</li>
       {%- endfor -%}
     </ul>
   </body>
-  <script>
-    
-    
-  </script>
 </html>

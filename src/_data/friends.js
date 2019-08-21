@@ -1,5 +1,5 @@
 const fetch = require("node-fetch");
-const config = require("siteData.json");
+const config = require("./siteData.json");
 
 module.exports = async function() {
   console.log( "Fetching your friends...", global.siteData);
