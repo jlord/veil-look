@@ -10,11 +10,36 @@
   <body>
     {{ content | safe }}
     
-    
-    
+    <button onclick="previous()">previous</button>
+    {%- for friend in friends -%}
+      <iframe data-src="https://{{ friend.domain }}.glitch.me" hidden></iframe>
+    {%- endfor -%}
+    <button onclick="next()">next</button>  
     <footer>
       Made by <a href="https://twitter.com/notwaldorf">Monica</a> and <a href="https://twitter.com/jllord">Jessica</a>.
       Go back to the <a href="/">homepage</a>.
     </footer>
   </body>
+  <script>
+    let index = 0;
+    let iframes = document.querySelectorAll('iframe');
+    iframes[0].hidden = false;
+    
+    function previous() {
+      if (index === 0) return;
+      iframes[index].hidden = true;
+      index -= 1;
+      iframes[index].hidden = false;
+    }
+    function next() {
+      if (index === iframes.length - 1) return;
+      iframes[index].hidden = true;
+      index += 1;
+      iframes[index].hidden = false;
+    }
+    function show(index) {
+      iframes[index].hidden = false;
+      iframes[indes].src = iframes[index].dataset.src;
+    }
+  </script>
 </html>
