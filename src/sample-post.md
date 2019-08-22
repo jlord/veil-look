@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Sample post
+date: 2019-08-21
 ---
 # For example...
 

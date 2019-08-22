@@ -45,15 +45,18 @@
     show(0);
     
     function previous() {
-      if (index === 0) return;
       iframes[index].hidden = true;
-      index -= 1;
+      index = index === 0 ? iframes.length - 1 : index - 1;
       show(index);
     }
     function next() {
-      if (index === iframes.length - 1) return;
       iframes[index].hidden = true;
-      index += 1;
+      index = index === iframes.length - 1 ? 0 : index + 1;
+      show(index);
+    }
+    function random() {
+      iframes[index].hidden = true;
+      index = Math.floor(Math.random() * iframes.length);
       show(index);
     }
     function show(index) {
