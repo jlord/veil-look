@@ -7,10 +7,10 @@
   },
   "restart": {
     "exclude": [
-      "^src/",
       "^dist/"
     ],
     "include": [
+      "src/",
       "watch.json$",
       ".eleventy.js$",
       "css/style.css"

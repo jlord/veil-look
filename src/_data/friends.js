@@ -14,7 +14,11 @@ module.exports = async function() {
       const items = json.items;
       const friends = [];
       json.items.forEach(p => {
-        friends.push({domain: p.domain, description: p.description, lastUpdate: p.updatedAt});
+        friends.push({
+          domain: p.domain, 
+          description: p.description, 
+          lastUpdate: p.updatedAt,
+          avatar: `https://cdn.glitch.com/project-avatar/${p.id}.png`})
       });
       return friends;
     });

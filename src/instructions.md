@@ -19,9 +19,7 @@ All posts live in `src/`. There are 3 posts in this sample project:
   - `sample-post.md`, which is an example post that you can duplicate over and over again for new content.
 
 To create a new post, duplicate [`sample-post.md`](https://glitch.com/edit/#!/ballistic-piranha?path=src/sample-post.md:7:107), 
-and start writing! When you're ready to deploy your new post for the world to see, you need to restart the process
-running the site. Right now this is a bit clunky (working on it!), but will happen if you edit the [`package.json`](https://glitch.com/edit/#!/ballistic-piranha?path=package.json:22:4)
-file. What I do is add a space and then erase it somewhere, and then bam! Redeployed blog. 💣
+and start writing! This should automatically redeploy your site!
 
 ### 👩‍🎨 Customize it
 This blog is written using [eleventy](https://www.11ty.io/), which is a static site generator. The docs are pretty helpful,

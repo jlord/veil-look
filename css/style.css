@@ -37,6 +37,9 @@ ul > li, ol > li {
   line-height: 1.5;
 }
 
+ul.no-bullet {
+  list-style-type: none;
+}
 a:not(.glitch-remix):link, a:not(.glitch-remix):visited {
   text-decoration: none;
   border-bottom: 6px solid var(--primary);
@@ -65,4 +68,9 @@ footer {
   margin: var(--spacing-xl) 0;
   padding-top: var(--spacing-l);
   border-top: 10px solid var(--secondary);
+}
+
+.avatar {
+  height: 20px;
+  vertical-align: middle;
 }

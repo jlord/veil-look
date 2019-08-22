@@ -18,9 +18,12 @@
     </ul>
     
     <h2>💍 My webring of friends</h2>
-    <ul>
+    <ul class="no-bullet">
       {%- for friend in friends -%}
-        <li><a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a> -- {{ friend.description }}</li>
+        <li>
+          <img class="avatar" src="{{ friend.avatar }}">
+          <a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a> 
+          -- {{ friend.description }}</li>
       {%- endfor -%}
     </ul>
     
