@@ -13,7 +13,9 @@
   "version": "1.0.0",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy && http-server dist/"
+    "deploy": "eleventy && http-server dist/",
+    "dev": "eleventy --serve",
+    "start": "npm run deploy"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
