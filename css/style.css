@@ -2,9 +2,9 @@
 [hidden] {display: none !important}
 
 html {
-  --foreground: #444;
+  --foreground: #333;
   --background: white;
-  --primary: aquamarine; 
+  --primary: peachpuff; 
   --secondary: lavender;
   --spacing-s: 8px;
   --spacing-m: 24px;
