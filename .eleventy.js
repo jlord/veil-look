@@ -4,6 +4,11 @@ const fetch = require('node-fetch');
 module.exports = function(eleventyConfig) {
   // eleventyConfig.addFilter( "myFilter", function() {});
   eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addCollection('posts', collection => {
+    return [...collection.getFilteredByGlob('./src/**/*.md')]
+      .reverse();
+  });
+
   return {
     passthroughFileCopy: true,
     dir: {

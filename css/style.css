@@ -73,7 +73,33 @@ footer {
   border-top: 10px solid var(--secondary);
 }
 
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 .avatar {
   height: 20px;
   vertical-align: middle;
+}
+
+.button {
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: 3px;
+  border: none;
+  background: var(--secondary);
+  padding: 8px 16px;
+  box-shadow: 6px 7px var(--primary);
+  cursor: pointer;
+  transition: background 0.2s linear; 
+}
+
+.button:hover {
+  background: var(--primary);
+}
+
+.button:active {
+  box-shadow: none;
 }

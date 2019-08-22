@@ -6,15 +6,34 @@
     <title>{{ pageTitle or siteData.name }}</title>
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <style>
+      .webring {
+        width: 100%;
+        margin: 0 auto;
+      }
+      iframe {
+        width: 100%;
+        height: 60vh;
+        margin-bottom: var(--spacing-m);
+        border: 10px solid var(--secondary);
+      }
+    </style>
   </head>
   <body>
     {{ content | safe }}
     
-    <button onclick="previous()">previous</button>
-    {%- for friend in friends -%}
-      <iframe data-src="https://{{ friend.domain }}.glitch.me" hidden></iframe>
-    {%- endfor -%}
-    <button onclick="next()">next</button>  
+    <div class="webring">
+      {%- for friend in friends -%}
+        <iframe data-src="https://{{ friend.domain }}.glitch.me" hidden></iframe>
+      {%- endfor -%}
+      <br>
+
+      <div class="horizontal">
+        <button class="button" onclick="previous()">previous</button>
+        <button class="button" onclick="next()">next</button>  
+      </div>
+    </div>
+    
     <footer>
       Made by <a href="https://twitter.com/notwaldorf">Monica</a> and <a href="https://twitter.com/jllord">Jessica</a>.
       Go back to the <a href="/">homepage</a>.
@@ -23,23 +42,23 @@
   <script>
     let index = 0;
     let iframes = document.querySelectorAll('iframe');
-    iframes[0].hidden = false;
+    show(0);
     
     function previous() {
       if (index === 0) return;
       iframes[index].hidden = true;
       index -= 1;
-      iframes[index].hidden = false;
+      show(index);
     }
     function next() {
       if (index === iframes.length - 1) return;
       iframes[index].hidden = true;
       index += 1;
-      iframes[index].hidden = false;
+      show(index);
     }
     function show(index) {
       iframes[index].hidden = false;
-      iframes[indes].src = iframes[index].dataset.src;
+      iframes[index].src = iframes[index].dataset.src;
     }
   </script>
 </html>
