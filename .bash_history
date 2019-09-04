@@ -1,0 +1,24 @@
+git status
+git diff
+git commit -am "Make draft"
+git status
+git remote
+git remote -v
+git status
+git diff
+git status
+git diff
+git checkout .
+git status
+git remote
+git remote -v
+git remote add upstream https://api.glitch.com/git/veil-look
+git remote -v
+git remote set-url upstream https://api.glitch.com/git/ballistic-piranha
+git remote -v
+git branch
+git checkout -b upstream
+git status
+git branch
+git pull upstream
+git pull upstream
