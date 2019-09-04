@@ -9,25 +9,25 @@
   </head>
   <body>
     {{ content | safe }}
-    
-    <h2>❡ All posts</h2>
+
+    <h2>❡ All Posts</h2>
     <ul>
       {%- for post in collections.posts -%}
         <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
       {%- endfor -%}
     </ul>
-    
-    <h2>❍ My webring of friends</h2>
+
+    <h2>❍ My Webring of Friends</h2>
     <ul class="no-bullet">
       {%- for friend in friends -%}
         <li>
           <img class="avatar" src="{{ friend.avatar }}">
-          <a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a> 
+          <a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a>
           -- {{ friend.description }}</li>
       {%- endfor -%}
     </ul>
     <p>...or check out on the experimental <a href="/webring/">webring explorer</a>!</p>
-  
+
     <footer>
       Made by <a href="https://twitter.com/notwaldorf">Monica</a> and <a href="https://twitter.com/jllord">Jessica</a>.
       Go back to the <a href="/">homepage</a>.

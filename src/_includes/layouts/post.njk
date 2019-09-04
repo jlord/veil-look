@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <p>Posted on {{ date.toLocaleDateString() }} </p>
+    <p class="post-meta">Posted on {{ date.toLocaleDateString() }} </p>
 
     {{ content | safe }}
-    
+
     <footer>
       Made by <a href="https://twitter.com/notwaldorf">Monica</a> and <a href="https://twitter.com/jllord">Jessica</a>.
       Go back to the <a href="/">homepage</a>.

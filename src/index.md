@@ -4,6 +4,6 @@ title: hello world
 draft: true
 ---
 
-# hello world.
+# Hello!
 
-Remember live journal and webrings and text? This is like that. 
+This is jlord's weblog and webring.
