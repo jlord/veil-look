@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: var(--serif);
+  font-family: var(--serif), serif;
   font-weight: 200;
   margin: 2em;
   background: var(--background);
@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 }
 
 h2, h3, h4 {
-  font-family: var(--sans);
+  font-family: var(--sans), sans-serif;
 }
 
 p {

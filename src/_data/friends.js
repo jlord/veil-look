@@ -2,7 +2,6 @@ const fetch = require("node-fetch");
 const config = require("./siteData.json");
 
 module.exports = async function() {
-  return
   console.log( "Fetching your friends...");
 
   const collectionName = config.collection;
