@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: 'Old English, Old Norse, and Danish!'
+title: Old English, Old Norse, and Danish!
 date: 2018-11-20
 ---
 
