@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: var(--serif), serif;
-  font-weight: 400;
+  font-weight: 200;
   margin: 2em;
   background: var(--background);
   color: var(--foreground);
@@ -104,7 +104,7 @@ img {
 /* type */
 .post-meta {
   font-size: 12px;
-  font-family: var(--mono);
+  font-family: var(--mono), monospace;
   color: #e1612d;
   font-weight: 600;
 }
