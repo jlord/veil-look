@@ -13,13 +13,13 @@ html {
   --spacing-l: 32px;
   --spacing-xl: 48px;
   --sans: 'Source Sans Pro';
-  --serif: 'Merriweather';
+  --serif: 'Lora';
   --mono: 'Source Code Pro';
 }
 
 body {
   font-family: var(--serif), serif;
-  font-weight: 200;
+  font-weight: 400;
   margin: 2em;
   background: var(--background);
   color: var(--foreground);
