@@ -1,9 +1,5 @@
 ---
 layout: layouts/home.njk
-title: hello world
+title: Hello!
 draft: true
 ---
-
-# Hello!
-
-This is jlord's weblog and webring.

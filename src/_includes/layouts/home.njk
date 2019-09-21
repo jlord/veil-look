@@ -7,29 +7,31 @@
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">  </head>
   <body>
-    {{ content | safe }}
+    <header>
+      <span class="title">{{ title }}</span>
+      <p class="subtitle">This is jlord's weblog—the not technical things she's interested in.</p>
+    </header>
 
-    <h2>❡ All Posts</h2>
+    <h2>Post <span class="post-meta">DATE</span></h2>
     <ul>
       {%- for post in collections.posts -%}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="post-meta">{{ post.data.date.toLocaleDateString() }}</span></li>
       {%- endfor -%}
     </ul>
 
-    <h2>❍ My Webring of Friends</h2>
+    <h2>My Webring of Friends</h2>
     <ul class="no-bullet">
       {%- for friend in friends -%}
         <li>
           <img class="avatar" src="{{ friend.avatar }}">
           <a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a>
-          -- {{ friend.description }}</li>
+        </li>
       {%- endfor -%}
     </ul>
-    <p>...or check out on the experimental <a href="/webring/">webring explorer</a>!</p>
+    <p>Try the <a href="/webring/">Webring explorer</a>!</p>
 
     <footer>
-      Made by <a href="https://twitter.com/notwaldorf">Monica</a> and <a href="https://twitter.com/jllord">Jessica</a>.
-      Go back to the <a href="/">homepage</a>.
+      <small><em>Made by <a href="https://twitter.com/jllord">@jllord</a></em></small>.
     </footer>
   </body>
 </html>

@@ -1,6 +1,8 @@
 * { box-sizing: border-box}
 [hidden] {display: none !important}
 
+/* #f3fffa */
+
 html {
   --foreground: #333;
   --background: white;
@@ -12,7 +14,7 @@ html {
   --spacing-xl: 48px;
   --sans: 'Source Sans Pro';
   --serif: 'Merriweather';
-  /* --code: 'Source Code Pro, monospace'; */
+  --mono: 'Source Code Pro';
 }
 
 body {
@@ -32,6 +34,14 @@ h1 {
   /* background: var(--primary); */
 }
 
+.title {
+  font-size: 60px;
+  font-weight: 600;
+}
+p.subtitle {
+  margin-top: 0px;
+}
+
 h1, h2, h3, h4 {
   margin-top: var(--spacing-xl);
   color: #333;
@@ -46,6 +56,8 @@ p {
   font-size: 16px;
 }
 
+ul, li { list-style-position: inside;  margin-left: 0; padding-left: 0; }
+
 ul > li, ol > li {
   margin-bottom: var(--spacing-s);
   line-height: 1.5;
@@ -57,7 +69,7 @@ ul.no-bullet {
 
 a:not(.glitch-remix):link, a:not(.glitch-remix):visited {
   text-decoration: none;
-  border-bottom: 3px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
   color: var(--foreground);
   transition: background 0.2s linear;
 }
@@ -92,7 +104,9 @@ img {
 /* type */
 .post-meta {
   font-size: 12px;
-  font-family: var(--sans);
+  font-family: var(--mono);
+  color: #e1612d;
+  font-weight: 600;
 }
 
 .horizontal {
