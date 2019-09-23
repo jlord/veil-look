@@ -1,2 +1,2 @@
-# veil-look
-test glitch export
+# livejournal on glitch.
+

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle or siteData.name }}</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:700,900&display=swap" rel="stylesheet">
+  <body>
+    <header>
+      <span class="title">{{ title }}</span>
+      <p class="subtitle">This is jlord's weblog—the not technical things she's interested in.</p>
+    </header>
+
+    <h2>Post <span class="post-meta">DATE</span></h2>
+    <ul>
+      {%- for post in collections.posts -%}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="post-meta">{{ post.data.date.toLocaleDateString() }}</span></li>
+      {%- endfor -%}
+    </ul>
+
+    <h2>My Webring of Friends</h2>
+    <ul class="no-bullet">
+      {%- for friend in friends -%}
+        <li>
+          <img class="avatar" src="{{ friend.avatar }}">
+          <a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+    <p>Try the <a href="/webring/">Webring explorer</a>!</p>
+
+    <footer>
+      <small><em>Made by <a href="https://twitter.com/jllord">@jllord</a></em></small>.
+    </footer>
+  </body>
+</html>
