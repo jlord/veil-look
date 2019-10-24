@@ -1,5 +1,9 @@
-* { box-sizing: border-box}
-[hidden] {display: none !important}
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
 
 /* #f3fffa */
 
@@ -12,9 +16,9 @@ html {
   --spacing-m: 24px;
   --spacing-l: 32px;
   --spacing-xl: 48px;
-  --sans: 'Source Sans Pro';
-  --serif: 'Lora';
-  --mono: 'Source Code Pro';
+  --sans: "Source Sans Pro";
+  --serif: "Lora";
+  --mono: "Source Code Pro";
 }
 
 body {
@@ -42,12 +46,17 @@ p.subtitle {
   margin-top: 0px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin-top: var(--spacing-xl);
   color: #333;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: var(--sans), sans-serif;
 }
 
@@ -56,9 +65,15 @@ p {
   font-size: 16px;
 }
 
-ul, li { list-style-position: inside;  margin-left: 0; padding-left: 0; }
+ul,
+li {
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
+}
 
-ul > li, ol > li {
+ul > li,
+ol > li {
   margin-bottom: var(--spacing-s);
   line-height: 1.5;
 }
@@ -67,7 +82,8 @@ ul.no-bullet {
   list-style-type: none;
 }
 
-a:not(.glitch-remix):link, a:not(.glitch-remix):visited {
+a:not(.glitch-remix):link,
+a:not(.glitch-remix):visited {
   text-decoration: none;
   border-bottom: 2px solid var(--primary);
   color: var(--foreground);
@@ -83,7 +99,8 @@ a:hover {
   vertical-align: text-bottom;
 }
 
-pre, code {
+pre,
+code {
   font-size: 15px;
   padding: 4px;
   font-family: inherit;
