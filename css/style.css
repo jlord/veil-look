@@ -29,7 +29,7 @@ body {
   color: var(--foreground);
   line-height: 1.75;
   max-width: 900px;
-  background: #fafafa;
+  background: #fff4ef;
 }
 
 h1 {
@@ -85,7 +85,7 @@ ul.no-bullet {
 a:not(.glitch-remix):link,
 a:not(.glitch-remix):visited {
   text-decoration: none;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid #333;
   color: var(--foreground);
   transition: background 0.2s linear;
 }
@@ -111,7 +111,8 @@ code {
 footer {
   margin: var(--spacing-xl) 0;
   padding-top: var(--spacing-l);
-  border-top: 10px solid var(--secondary);
+  /* border-top: 10px solid var(--secondary); */
+  /* background-color: pink; */
 }
 
 img {
