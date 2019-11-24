@@ -5,7 +5,7 @@ date: 2018-11-20
 ---
 
 <img width="775" alt="construction of Danish words diagram" src="https://user-images.githubusercontent.com/1305617/48813245-1010f900-ed04-11e8-90c9-4870b604aa63.png"><br>
-<span class="meta-text">Illustration of the construction of Danish words</span>
+<caption>Illustration of the construction of Danish words</caption>
 
 I love learning about the history of English, especially Old English. A while ago I read [_Stories of English_](https://www.amazon.com/Stories-English-David-Crystal/dp/1585677191) and loved it so much that I have moved with it for a decade, across the Atlantic and twice across the US.
 

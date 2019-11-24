@@ -107,7 +107,8 @@ img {
 }
 
 /* type */
-.meta-text {
+caption,
+.meta-text { 
   font-size: 12px;
   font-family: var(--mono), monospace;
   color: var(--primary);
