@@ -106,9 +106,12 @@ img {
   background-color: var(--secondary);
 }
 
-/* type */
-caption,
-.meta-text { 
+figure {
+  margin: 0;
+}
+
+figcaption,
+.meta-text {
   font-size: 12px;
   font-family: var(--mono), monospace;
   color: var(--primary);
@@ -122,11 +125,6 @@ caption,
   justify-content: space-between;
   max-width: 500px;
 }
-
-/* .avatar {
-  height: 20px;
-  vertical-align: middle;
-} */
 
 .button {
   font-size: inherit;
