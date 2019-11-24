@@ -8,14 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:700,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <p class="post-meta">Posted on {{ page.date.toLocaleDateString() }} </p>
-
-    <h1>{{ title }}</h1>
+    <header>
+      <p class="meta-text">Posted on {{ page.date.toLocaleDateString() }} </p>
+      <h1>{{ title }}</h1>
+    </header>
 
     {{ content | safe }}
 
     <footer>
-      <a href="/">Home</a>
+      <small>
+        <a href="/">Home</a> | <em>Made by @<a href="https://twitter.com/jllord">jllord</a> on <a href="https://glitch.com">Glitch</a></em>.
+        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+    </small>
     </footer>
   </body>
 </html>

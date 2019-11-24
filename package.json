@@ -19,8 +19,9 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
-    "node-fetch": "^2.6.0",
-    "http-server": "0.11.1"
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "http-server": "0.11.1",
+    "node-fetch": "^2.6.0"
   },
   "license": "MIT"
 }

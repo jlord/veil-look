@@ -1,11 +1,9 @@
 ---
 layout: layouts/webring.njk
-title: webring explorer
+title: Explore My Webring
 draft: true
 ---
 
-# Explore My Webring
+[Monica](https://twitter.com/notwaldorf) and I built a webring of sorts ([remember those](https://en.wikipedia.org/wiki/Webring)?) out of Glitch collections. You can create a collection of sites you like on Glitch and create a site like this ([remix the original](https://glitch.com/~geoglitchies)) to have a page just like this, that shows those sites.
 
-Neither Jessica nor Monica remember webrings very well, but they vaguely 
-think there was a way to explore all sites in a webring. Whether or
-not that's a fabricated memory, here is that feature: 
+View my [collection on Glitch](https://glitch.com/@jlord/frands).

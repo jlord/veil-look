@@ -8,20 +8,22 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:700,900&display=swap" rel="stylesheet">
   <body>
     <header>
-      <span class="title">{{ title }}</span>
-      <p class="subtitle">This is jlord's weblog—the not technical things she's interested in.</p>
+      <p class="meta-text">jlord's weblog</p>
+      <h1>{{ title }}</h1>
     </header>
 
-    <h2>Post <span class="post-meta">DATE</span></h2>
+    <h2>Post <span class="meta-text">DATE</span></h2>
     <ul>
       {%- for post in collections.posts -%}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="post-meta">{{ post.data.date.toLocaleDateString() }}</span></li>
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="meta-text">{{ post.data.date.toLocaleDateString() }}</span></li>
       {%- endfor -%}
     </ul>
 
     <footer>
-      <small><em>Made by <a href="https://twitter.com/jllord">@jllord</a> on <a href-"https://glitch.com">Glitch</a></em></small>.
-      <small><em>See my <a href="/webring/">webring of friends's sites</a>.</em></small>
+      <small>
+        <em>Made by @<a href="https://twitter.com/jllord">jllord</a> on <a href="https://glitch.com">Glitch</a></em>.
+        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+      </small>
     </footer>
   </body>
 </html>
