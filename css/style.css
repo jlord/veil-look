@@ -53,8 +53,7 @@ p {
   font-size: 16px;
 }
 
-ul,
-li {
+ul.flush {
   list-style-position: inside;
   margin-left: 0;
   padding-left: 0;
@@ -63,7 +62,6 @@ li {
 ul > li,
 ol > li {
   margin-bottom: var(--spacing-s);
-  line-height: 1.5;
 }
 
 ul.no-bullet {
@@ -79,7 +77,8 @@ a:not(.glitch-remix):visited {
   transition: background 0.2s linear;
 }
 
-a:hover {
+/* TODO it's silly to call out the fish specifically */
+a:not(.glitch-remix):hover {
   background: var(--secondary) !important;
 }
 
@@ -90,11 +89,13 @@ a:hover {
 
 pre,
 code {
-  font-size: 15px;
-  padding: 4px;
+  font-size: 12px;
+  padding: 2px 10px;
   font-family: var(--mono);
-  background: var(--secondary);
-  color: var(--foreground);
+  border-radius: 19px;
+  border: 1px solid var(--foreground);
+  /* background: var(--secondary); */
+  color: var(--primary);
 }
 
 footer {
@@ -104,6 +105,10 @@ footer {
 
 img {
   background-color: var(--secondary);
+}
+
+a img {
+  background: none !important;
 }
 
 figure {
