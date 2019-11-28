@@ -5,3 +5,4 @@
 
 ## Style
 - Lighten
+- Footnotes
