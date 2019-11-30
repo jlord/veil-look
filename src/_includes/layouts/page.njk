@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle or siteData.name }}</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:700,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <p class="meta-text">{{ subtitle }}</p>
+      <h1>{{ title }}</h1>
+    </header>
+
+    {{ content | safe }}
+
+    <footer>
+      <small>
+        <a href="/">Home</a> | <a href="/feed.xml">RSS</a> | <em>Made by @<a href="https://twitter.com/jllord">jllord</a> on <a href="https://glitch.com">Glitch</a></em>.
+        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+    </small>
+    </footer>
+  </body>
+</html>
