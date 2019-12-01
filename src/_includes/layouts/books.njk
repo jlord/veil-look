@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle or siteData.name }}</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <p class="meta-text">{{ subtitle }}</p>
+      <h1>{{ title }}</h1>
+    </header>
+
+    {{ content | safe }}
+
+    <h2>2019 Read Shelf</h2>
+    <div class="book-shelf">
+      {%- for book in books -%}
+      <div class="book">
+        <a href="{{ book.GoodreadsURL }}">
+          <img src="{{ book.CoverURL }}">
+        </a>
+        <!-- <h3>{{ book.Title }}</h3> -->
+      </div>
+      {%- endfor -%}
+    </div>
+
+    <h2>2019 Read List</h2>
+    <div class="book-list">
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th><th>Title</th><th>Author</th><th>Read</th><th>Category</th><th>Pages</th><th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for book in books -%}
+          <tr>
+            <td class="table-row-number"></td><td><a href="{{ book.GoodreadsURL }}">{{ book.Title }}</a></td><td>{{ book.Author }}</td><td>{{ book.Read }}</td><td>{{ book.Category }} <span class="meta-text">{{ book.SubCategory }}</span></td><td class="center">{{ book.Pages }}</td><td class="center">{{ book.Rating }}</td>
+          </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+
+    </div>
+
+    <footer>
+      <small>
+        <a href="/">Home</a> | <em>Made by @<a href="https://twitter.com/jllord">jllord</a> on <a href="https://glitch.com">Glitch</a></em>.
+        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+      </small>
+    </footer>
+  </body>
+</html>

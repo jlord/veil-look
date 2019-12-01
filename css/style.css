@@ -32,6 +32,7 @@ body {
 h1 {
   display: inline-block;
   font-size: 56px;
+  /* TODO scale size */
 }
 
 h1,
@@ -105,6 +106,7 @@ footer {
 
 img {
   background-color: var(--secondary);
+  max-width: 100%;
 }
 
 a img {
@@ -150,4 +152,61 @@ figcaption,
 
 .button:active {
   box-shadow: none;
+}
+
+/* Books */
+
+.center {
+  text-align: center;
+}
+
+.book {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.book img {
+  max-width: 200px;
+}
+
+.book-list {
+  font-family: var(--sans), sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.book-list td {
+  padding-right: 10px;
+}
+
+.book-list thead th {
+  border-bottom: 3px solid #333;
+  font-size: 20px;
+  text-align: left;
+  padding-right: 8px;
+}
+
+.book-list table {
+    counter-reset: rowNumber - 1;
+}
+
+.book-list table tr {
+    counter-increment: rowNumber;
+}
+
+.book-list table tr td:first-child {
+  /* To avoid single digit row numbers misaligning titles */
+  /* padding-left: 24px; */
+}
+
+.book-list td.table-row-number:before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+    text-align: right;
+    /* Copied from meta-text */
+    font-size: 12px;
+    font-family: var(--mono), monospace;
+    color: var(--primary);
+    font-weight: 600;
 }
