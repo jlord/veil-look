@@ -15,8 +15,8 @@
 
     {{ content | safe }}
 
-    <h2>2019 Read Shelf</h2>
-    <div class="book-shelf">
+    <h2 id="book-shelf">2019 Read Shelf</h2>
+    <div class="book-shelf-container">
       {%- for book in books -%}
       <div class="book">
         <a href="{{ book.GoodreadsURL }}">
@@ -27,8 +27,8 @@
       {%- endfor -%}
     </div>
 
-    <h2>2019 Read List</h2>
-    <div id="book-list">
+    <h2 id="book-list">2019 Read List</h2>
+    <div class="book-list-container">
       <table>
         <thead>
           <tr>
