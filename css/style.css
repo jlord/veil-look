@@ -163,43 +163,45 @@ figcaption,
 .book {
   display: inline-block;
   padding-right: 20px;
+  box-shadow: 0 2px 4px 0 rgba(#000, .1), 0 9px 20px 0 rgba(#000, .25);
+  
 }
 
 .book img {
   max-width: 200px;
 }
 
-.book-list {
+#book-list {
   font-family: var(--sans), sans-serif;
   font-weight: 100;
   font-size: 14px;
 }
 
-.book-list td {
+#book-list td {
   padding-right: 10px;
 }
 
-.book-list thead th {
+#book-list thead th {
   border-bottom: 3px solid #333;
   font-size: 20px;
   text-align: left;
   padding-right: 8px;
 }
 
-.book-list table {
+#book-list table {
     counter-reset: rowNumber - 1;
 }
 
-.book-list table tr {
+#book-list table tr {
     counter-increment: rowNumber;
 }
 
-.book-list table tr td:first-child {
+#book-list table tr td:first-child {
   /* To avoid single digit row numbers misaligning titles */
   /* padding-left: 24px; */
 }
 
-.book-list td.table-row-number:before {
+#book-list td.table-row-number:before {
     content: counter(rowNumber);
     min-width: 1em;
     margin-right: 0.5em;
