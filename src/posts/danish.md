@@ -5,7 +5,7 @@ date: 2018-11-20
 ---
 
 <figure>
-<img width="775" alt="construction of Danish words diagram" src="https://user-images.githubusercontent.com/1305617/48813245-1010f900-ed04-11e8-90c9-4870b604aa63.png"><br>
+<img alt="construction of Danish words diagram" src="https://user-images.githubusercontent.com/1305617/48813245-1010f900-ed04-11e8-90c9-4870b604aa63.png"><br>
 <figcaption>Illustration of the construction of Danish words</figcaption>
 </figure>
 
