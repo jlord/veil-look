@@ -96,7 +96,7 @@ code {
   font-family: var(--mono);
   border-radius: 10px;
   color: var(--primary);
-  background-color: var(--muted)
+  background-color: var(--muted);
 }
 
 footer {
