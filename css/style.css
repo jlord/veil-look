@@ -10,6 +10,7 @@ html {
   --background:   #fff4ef;  /* pink */
   --primary:      #e1612d;  /* red */
   --secondary:    #ffd13a;  /* yellow */
+  --muted:        #fde8e1;  /* mauve */
   --spacing-s:    8px;
   --spacing-m:    24px;
   --spacing-l:    32px;
@@ -91,11 +92,11 @@ a:not(.glitch-remix):hover {
 pre,
 code {
   font-size: 12px;
-  padding: 2px 10px;
+  padding: 2px 8px;
   font-family: var(--mono);
-  border-radius: 19px;
-  border: 1px solid var(--foreground);
+  border-radius: 10px;
   color: var(--primary);
+  background-color: var(--muted);
 }
 
 footer {
