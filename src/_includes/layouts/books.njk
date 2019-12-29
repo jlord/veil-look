@@ -44,9 +44,20 @@
         </tbody>
       </table>
     </div>
-    
-    <h2>How this Page is Made</h2>
-    <p>I use Goodreads to keep track of books I've read but their API is not stellar and the export option is OK but regardless, they can't provide links to cover images which is a must-have for me. Since I don't read at breakneck speeds I just made a spreadsheet myself with information from my Goodreads account and copying the image URL from the Goodreads site</p>
+
+    <h2 id="how-to-books">How this Page is Made</h2>
+    <p>I use <a href="https://www.goodreads.com/user/show/768192-jlord" target="_blank">Goodreads</a> to keep track of books I've read but their API is not stellar and they can't provide links to cover images which is a must-have for me. Since I don't read at breakneck speeds I just made a <a href="https://docs.google.com/spreadsheets/d/1tJtKdvCWCLLv9mZwTFjSXM6t2mMfPHgkhtWJDBdpjYc/edit#gid=0" target="_blank">spreadsheet</a> myself with information from my Goodreads account including copying the image URL from book's Goodreads page.</p>
+
+    <p>That spreadsheet is turned into JSON (via my <a href="https://spreadsheet.glitch.me" target="_blank">tool</a> that does this converting for you) that this site can use. This is an <a href="https://www.11ty.dev" target="_blank">Eleventy</a> site so there is a layout template for this page that points to the book JSON data. You can go directly to that template and <a href="https://glitch.com/edit/#!/veil-look?path=src/_includes/layouts/books.njk" target="_blank">see the code on Glitch</a>.</p>
+
+    <p>Here are the steps to updating this page after finishing a book:</p>
+
+    <ol>
+      <li>Add a row to <a href="https://docs.google.com/spreadsheets/d/1tJtKdvCWCLLv9mZwTFjSXM6t2mMfPHgkhtWJDBdpjYc/edit#gid=0" target="_blank">my spreadsheet</a> for the finished book.</li>
+      <li>Generate JSON for the updated spreadsheet with <code>https://spreadsheet.glitch.me/?key=YOURSPREADSHEETKEY</code>.</li>
+      <li>Copy and paste the updated JSON into the project file <code>books.json</code>, <a href="https://glitch.com/edit/#!/veil-look?path=src/_data/books.json" target="_blank">see the file in Glitch</a>.</li>
+      <li>Use Git to commit the changes and push them to Glitch, or do them directly in Glitch with automatic deploys.</li>
+    </ol>
 
     <footer>
       <small>
