@@ -22,7 +22,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "http-server": "0.11.1",
     "node-fetch": "^2.6.0",
-    "handlebars": "^4.5.3"
+    "handlebars": ">=4.3.0"
   },
   "license": "MIT"
 }
