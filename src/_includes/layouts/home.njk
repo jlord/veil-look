@@ -6,32 +6,28 @@
     <title>{{ pageTitle or siteData.name }}</title>
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:700,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.glitch.com/18e1b6c5-abb9-4483-a1ce-3c97822dcbc0%2Finitials-favicon.png?v=1577657596621" type="image/png">
   <body>
     <header>
-      <span class="title">{{ title }}</span>
-      <p class="subtitle">This is jlord's weblog—the not technical things she's interested in.</p>
+      <p class="meta-text">jlord's weblog</p>
+      <h1>{{ title }}</h1>
     </header>
 
-    <h2>Post <span class="post-meta">DATE</span></h2>
-    <ul>
+    <h2>Post <span class="meta-text">DATE</span></h2>
+    <ul class="flush">
       {%- for post in collections.posts -%}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="post-meta">{{ post.data.date.toLocaleDateString() }}</span></li>
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="meta-text">{{ post.date.toLocaleDateString() }}</span></li>
       {%- endfor -%}
     </ul>
-
-    <h2>My Webring of Friends</h2>
-    <ul class="no-bullet">
-      {%- for friend in friends -%}
-        <li>
-          <img class="avatar" src="{{ friend.avatar }}">
-          <a href="https://{{ friend.domain }}.glitch.me">{{ friend.domain }}</a>
-        </li>
-      {%- endfor -%}
-    </ul>
-    <p>Try the <a href="/webring/">Webring explorer</a>!</p>
+    <p>
+      → <a href="/feed.xml">RSS</a> feed.
+    </p>
 
     <footer>
-      <small><em>Made by <a href="https://twitter.com/jllord">@jllord</a></em></small>.
+      <small>
+        <em>Made by @<a href="https://twitter.com/jllord">jllord</a> on <a href="https://glitch.com">Glitch</a></em>.
+        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+      </small>
     </footer>
   </body>
 </html>

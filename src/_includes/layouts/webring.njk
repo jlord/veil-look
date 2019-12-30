@@ -6,8 +6,10 @@
     <title>{{ pageTitle or siteData.name }}</title>
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:700,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.glitch.com/18e1b6c5-abb9-4483-a1ce-3c97822dcbc0%2Ffavicon.png" type="image/png">
     <style>
       .webring {
+        padding-top: 40px;
         width: 100%;
         margin: 0 auto;
       }
@@ -15,11 +17,16 @@
         width: 100%;
         height: 60vh;
         margin-bottom: var(--spacing-m);
-        border: 10px solid var(--secondary);
+        border: 2px solid var(--foreground);
       }
     </style>
   </head>
   <body>
+    <header>
+      <p class="meta-text">A webring built with Glitch Collections</p>
+      <h1>{{ title }}</h1>
+    </header>
+
     {{ content | safe }}
 
     <div class="webring">
@@ -28,18 +35,23 @@
       {%- endfor -%}
       <br>
 
-      <div class="horizontal">
-        <button class="button" onclick="previous()">previous</button>
-        <button class="button" onclick="next()">next</button>
+      <div class="horizontal-button-row">
+        <button class="button" onclick="previous()">Previous</button>
+        <button class="button" onclick="random()">Random</button>
+        <button class="button" onclick="next()">Next</button>
       </div>
     </div>
 
     <footer>
-      Made by <a href="https://twitter.com/notwaldorf">Monica</a> and <a href="https://twitter.com/jllord">Jessica</a>.
-      Go back to the <a href="/">homepage</a>.
+      <small>
+        <a href="/">Home</a> | <em>Made by @<a href="https://twitter.com/jllord">jllord</a> on <a href="https://glitch.com">Glitch</a></em>.
+        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+      </small>
     </footer>
   </body>
+
   <script>
+    // Buttons actions to loop through sites in the collection/webring.
     let index = 0;
     let iframes = document.querySelectorAll('iframe');
     show(0);
