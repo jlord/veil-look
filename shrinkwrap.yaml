@@ -4191,6 +4191,6 @@ shrinkwrapVersion: 3
 specifiers:
   '@11ty/eleventy': ^0.9.0
   '@11ty/eleventy-plugin-rss': ^1.0.7
-  handlebars: ^4.5.3
+  handlebars: '>=4.3.0'
   http-server: 0.11.1
   node-fetch: ^2.6.0
