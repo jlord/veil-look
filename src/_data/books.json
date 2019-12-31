@@ -1,8 +1,23 @@
 [
   {
+    "Title": "The Library Book",
+    "Subtitle": "",
+    "Author": "Orlean, Susan",
+    "Published": "10/16/2018",
+    "Read": "12/31/2019",
+    "ReadCount": "",
+    "Audibook": "",
+    "Category": "Non Fiction",
+    "SubCategory": "History",
+    "Rating": "4",
+    "Pages": "317",
+    "CoverURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524238338l/39507318._SX318_.jpg",
+    "GoodreadsURL": "https://www.goodreads.com/book/show/39507318-the-library-book?from_search=true&qid=sUnJhJmJq9&rank=1"
+  },
+  {
     "Title": "Exhalation ",
     "Subtitle": "",
-    "Author": "Ted Chiang",
+    "Author": "Chiang, Ted ",
     "Published": "5/7/2019",
     "Read": "12/29/2019",
     "ReadCount": "",
@@ -17,7 +32,7 @@
   {
     "Title": "The Art Detective",
     "Subtitle": "Fakes, Frauds, and Finds and the Search for Lost Treasures",
-    "Author": "Philip Mould",
+    "Author": "Mould, Philip ",
     "Published": "5/28/2009",
     "Read": "12/20/2019",
     "ReadCount": "",
@@ -32,7 +47,7 @@
   {
     "Title": "The Dutch House",
     "Subtitle": "",
-    "Author": "Ann Patchett",
+    "Author": "Patchett, Ann ",
     "Published": "9/24/2019",
     "Read": "12/9/2019",
     "ReadCount": "",
