@@ -15,7 +15,7 @@ html {
   --spacing-m:    24px;
   --spacing-l:    32px;
   --spacing-xl:   48px;
-  --sans:         "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --sans:         "Franklin Gothic Book", "Source Sans Pro", Helvetica, Arial, sans-serif;
   --serif:        "Lora", Baskerville, Georgia, serif;
   --mono:         "Source Code Pro", Monaco, Courier, monospace;
 }
