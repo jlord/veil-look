@@ -6,14 +6,6 @@ date: 2019-12-31
 
 I set a goal of reading 12 books in 2019 and I read 19—how about that! If you want to see a shelf and list without my ramblings, [view the book page](/books). Below, I ramble. You can [skip to the how-to](#how-to-books), if you want to make a book page, too.
 
-## Some highlights
-
-_Link to books below._
-
-I read more Fiction than I have in many years combined! I enjoyed it, too. I really liked Sally Rooney's _Normal People_; I was sucked into the world she built and learned some handy Irish slang. _Fleishman Is in Trouble_, oof, ruined me emotionally for two days (worth it).
-
-Despite venturing away from Non-Fiction more often this year I still enjoyed some great tales of history: _The Professor and the Madman_ is the story of how the Oxford English Dictionary came to be and goes places you wouldn't expect; _King Cnut and the Viking Conquest of England_ is about Cnut, the first Danish King of England, and with this book I started the year true to my love for all this story touches (Denmark! Vikings! Medieval England!); the last book I read this year, _The Library Book_, tells the story of 1986 fire to the Los Angeles Public Library, the investigation, the restoration and the incredible inner workings of a library.
-
 <h3 id="book-shelf">2019 Shelf</h2>
 <div class="book-shelf-container">
   {%- for book in books -%}
@@ -25,6 +17,13 @@ Despite venturing away from Non-Fiction more often this year I still enjoyed som
   </div>
   {%- endfor -%}
 </div>
+
+## Some highlights
+
+I read more Fiction than I have in many years combined! I enjoyed it, too. I really liked Sally Rooney's _Normal People_; I was sucked into the world she built and learned some handy Irish slang. _Fleishman Is in Trouble_, oof, ruined me emotionally for two days (worth it).
+
+Despite venturing away from Non-Fiction more often this year I still enjoyed some great tales of history: _The Professor and the Madman_ is the story of how the Oxford English Dictionary came to be and goes places you wouldn't expect; _King Cnut and the Viking Conquest of England_ is about Cnut, the first Danish King of England, and with this book I started the year true to my love for all this story touches (Denmark! Vikings! Medieval England!); the last book I read this year, _The Library Book_, tells the story of 1986 fire to the Los Angeles Public Library, the investigation, the restoration and the incredible inner workings of a library.
+
 
 I loved _The Art Detective_ because I love the BBC show Fake or Fortune and this book, by one of the hosts, Philip Mould, is the same sort of detective, restoration, and history tales as the show—which, tragically, I wasn't able to find the latest season of unofficially on YouTube this year.
 
