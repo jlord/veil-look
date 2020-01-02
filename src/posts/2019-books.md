@@ -4,7 +4,7 @@ title: 2019 Books
 date: 2019-12-31
 ---
 
-I set a goal of reading 12 books in 2019 and I read 19—how about that! If you want to see a shelf and list without my ramblings, [view the book page](/books). Below, I ramble. You can [skip to the how-to](#how-to-books), if you want to make a book page, too.
+I set a goal of reading 12 books in 2019 and I read 19—how about that! There's a [shelf view](#book-shelf), then some ramblings on what I liked, then a [list view](#book-list) and lastly, a [how-to](#how-to-books), if you want to make a book page, too.
 
 <h3 id="book-shelf">2019 Shelf</h2>
 <div class="book-shelf-container">
