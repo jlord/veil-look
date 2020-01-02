@@ -52,7 +52,7 @@ I re-read _The Course of Love_ by School of Life's Alain de Botton. And I'd read
 <h2 id="how-to-books">How this Page is Made</h2>
 <p>I use <a href="https://www.goodreads.com/user/show/768192-jlord" target="_blank">Goodreads</a> to keep track of books I've read but their API is not stellar and they can't provide links to cover images which is a must-have for a shelf view. Since I don't read at breakneck speeds I just made a <a href="https://docs.google.com/spreadsheets/d/1tJtKdvCWCLLv9mZwTFjSXM6t2mMfPHgkhtWJDBdpjYc/edit#gid=0" target="_blank">spreadsheet</a> myself with information from my Goodreads data and links to cover art.</p>
 
-<p>That spreadsheet is turned into JSON via my <a href="https://spreadsheet.glitch.me" target="_blank">tool</a> that does the spreadsheet-to-JSON conversion for you. This site is built with <a href="https://www.11ty.dev" target="_blank">Eleventy</a> so I use a template in the HTML that uses that JSON data. You can go directly the template and <a href="https://glitch.com/edit/#!/veil-look?path=src/_includes/posts/2019-books.md" target="_blank">see the code on Glitch</a>.</p>
+<p>That spreadsheet is turned into JSON with my <a href="https://spreadsheet.glitch.me" target="_blank">tool</a> that does the spreadsheet-to-JSON conversion for you. This site is built with <a href="https://www.11ty.dev" target="_blank">Eleventy</a> so I created a template in the HTML that uses that JSON data. You can go directly the template and <a href="https://glitch.com/edit/#!/veil-look?path=src/_includes/posts/2019-books.md" target="_blank">see the code on Glitch</a>.</p>
 
 <h3>Here are the steps to updating this page after finishing a book:</h3>
 
