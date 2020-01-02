@@ -5,13 +5,10 @@ subtitle: Lord, Jessica
 draft: true
 ---
 
-Hello! I am Jessica Lord. I am a software engineer; though my career started in architecture and urban design technology. I have this second site for I don't know what reason. Here's the [other](http://jlord.us).
+Hello! I am a software engineer, though my career started in architecture and urban design technology. The purpose of this site might just be to tinker. Here's my "real" (what is real?) [site](http://jlord.us).
 
-I know lots of people who also like tech and open source and JavaScript. I know less who also like cities, etymology, Vikings, medieval England, Denmark and Danish design, art history and the Dutch Golden Age, Disneyland, high speed trains. Which is maybe what I’ll talk more about here?
+Outside of my day job in computers (hopefully making the web more approachable for all) I enjoy walking, trains, Old English etymology, art from the Dutch Golden age and 90s country music. I contain multitudes!
 
-I'm elsewhere on the world wide web:
+### Elsewhere on the world wide web
 
-- [twitter/jllord](https://twitter.com/jllord) (Two l's, ugh, <em>I know</em>)
-- [github/jlord](https://github.com/jlord)
-- [instagram/jlord](https://instagram.com/jlord)
-- [goodreads/jlord](https://www.goodreads.com/user/show/768192-jlord)
+[github/jlord](https://github.com/jlord) — [instagram/jlord](https://instagram.com/jlord) — [goodreads/jlord](https://www.goodreads.com/user/show/768192-jlord) — [twitter/jllord](https://twitter.com/jllord) (Two l's, ugh, <em>I know</em>)
