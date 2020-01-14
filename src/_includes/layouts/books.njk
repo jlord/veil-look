@@ -16,7 +16,7 @@
 
     {{ content | safe }}
 
-    <h2 id="book-shelf">2020 Read Shelf</h2>
+    <h2 id="book-shelf">2020 Currently Reading Shelf</h2>
     <div class="book-shelf-container">
       {%- for book in current_books -%}
       <div class="book">
@@ -28,7 +28,7 @@
       {%- endfor -%}
     </div>
 
-    <h2 id="book-list">2020 Read List</h2>
+    <h2 id="book-list">2020 Currently Reading List</h2>
     <div class="book-list-container">
       <table>
         <thead>
