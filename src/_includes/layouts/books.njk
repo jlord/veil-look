@@ -16,9 +16,9 @@
 
     {{ content | safe }}
 
-    <h2 id="book-shelf">2019 Read Shelf</h2>
+    <h2 id="book-shelf">2020 Read Shelf</h2>
     <div class="book-shelf-container">
-      {%- for book in books -%}
+      {%- for book in current_books -%}
       <div class="book">
         <a href="{{ book.GoodreadsURL }}">
           <img src="{{ book.CoverURL }}">
@@ -28,7 +28,7 @@
       {%- endfor -%}
     </div>
 
-    <h2 id="book-list">2019 Read List</h2>
+    <h2 id="book-list">2020 Read List</h2>
     <div class="book-list-container">
       <table>
         <thead>
@@ -37,7 +37,7 @@
           </tr>
         </thead>
         <tbody>
-          {%- for book in books -%}
+          {%- for book in current_books -%}
           <tr>
             <td class="table-row-number"></td><td><a href="{{ book.GoodreadsURL }}">{{ book.Title }}</a></td><td>{{ book.Author }}</td><td>{{ book.Read }}</td><td>{{ book.Category }} <span class="meta-text">{{ book.SubCategory }}</span></td><td class="center">{{ book.Pages }}</td><td class="center">{{ book.Rating }}</td>
           </tr>
@@ -54,9 +54,9 @@
     <h3>Here are the steps to updating this page after finishing a book:</h3>
 
     <ol>
-      <li>Add a row to <a href="hhttps://docs.google.com/spreadsheets/d/1tJtKdvCWCLLv9mZwTFjSXM6t2mMfPHgkhtWJDBdpjYc/edit?usp=sharing" target="_blank">my spreadsheet</a> for the finished book.</li>
+      <li>Add a row to <a href="https://docs.google.com/spreadsheets/d/1pNIsIQr1g8eLaZzXttHr1vW2xkCN7A3aodU3TeIRkys/edit?usp=sharing" target="_blank">my spreadsheet</a> for the finished book.</li>
       <li>Generate JSON for the updated spreadsheet with <code>https://spreadsheet.glitch.me/?key=SPREADSHEETKEYHERE</code>.</li>
-      <li>Copy and paste the updated JSON into the file <code>books.json</code>, <a href="https://glitch.com/edit/#!/veil-look?path=src/_data/books.json" target="_blank">see the file in Glitch</a>.</li>
+      <li>Copy and paste the updated JSON into the file <code>current_books.json</code>, <a href="https://glitch.com/edit/#!/veil-look?path=src/_data/current_books.json" target="_blank">see the file in Glitch</a>.</li>
       <li>Use Git to commit the changes and push them to Glitch, or do it directly in Glitch with automatic deploys.</li>
     </ol>
 
