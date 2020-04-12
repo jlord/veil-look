@@ -1,5 +1,20 @@
 [
   {
+    "Title": "Slouching Towards Bethlehem",
+    "Subtitle": "Essays",
+    "Author": "Didion, Joan",
+    "Published": "00/00/1968",
+    "Read": "04/11/2020",
+    "ReadCount": "",
+    "Audibook": "",
+    "Category": "Non Fiction",
+    "SubCategory": "Essays",
+    "Rating": "5",
+    "Pages": "257",
+    "CoverURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506548069l/36315211._SY475_.jpg",
+    "GoodreadsURL": "https://www.goodreads.com/book/show/36315211-slouching-towards-bethlehem"
+  },
+  {
     "Title": "The Anglo-Saxon Age",
     "Subtitle": "A Very Short Introduction",
     "Author": "Blair, John",
@@ -16,7 +31,7 @@
   },
   {
     "Title": "The White Album",
-    "Subtitle": "",
+    "Subtitle": "Essays",
     "Author": "Didion, Joan",
     "Published": "00/00/1979",
     "Read": "03/28/2020",
@@ -31,7 +46,7 @@
   },
   {
     "Title": "South and West",
-    "Subtitle": "",
+    "Subtitle": "From a Notebook",
     "Author": "Didion, Joan",
     "Published": "03/07/2017",
     "Read": "03/18/2020",
