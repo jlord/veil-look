@@ -36,13 +36,13 @@ I re-read _The Course of Love_ by School of Life's Alain de Botton. And I'd read
   <table>
     <thead>
       <tr>
-        <th>No.</th><th>Title</th><th>Author</th><th>Read</th><th>Category</th><th>Pages</th><th>Rating</th>
+        <th>No.</th><th>Title</th><th>Author</th><th>Read</th><th>Category</th><th>Pages</th>
       </tr>
     </thead>
     <tbody>
       {%- for book in books -%}
       <tr>
-        <td class="table-row-number"></td><td><a href="{{ book.GoodreadsURL }}">{{ book.Title }}</a></td><td>{{ book.Author }}</td><td>{{ book.Read }}</td><td>{{ book.Category }} <span class="meta-text">{{ book.SubCategory }}</span></td><td class="center">{{ book.Pages }}</td><td class="center">{{ book.Rating }}</td>
+        <td class="table-row-number"></td><td><a href="{{ book.GoodreadsURL }}">{{ book.Title }}</a></td><td>{{ book.Author }}</td><td>{{ book.Read }}</td><td>{{ book.Category }} <span class="meta-text">{{ book.SubCategory }}</span></td><td class="center">{{ book.Pages }}</td>
       </tr>
       {%- endfor -%}
     </tbody>
