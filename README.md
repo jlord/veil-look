@@ -4,4 +4,8 @@ This is a static website built using [Eleventy.js](https://www.11ty.dev/) that a
 
 You can see the original site to learn more and to make a copy of for yourself!
 
+```
+# code box
+```
+
 [glitch.com/~geoglitchies](https://glitch.com/~geoglitchies)
