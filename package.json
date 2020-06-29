@@ -18,11 +18,14 @@
     "start": "npm run deploy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "http-server": "0.11.1",
+    "http-server": "^0.12.3",
     "node-fetch": "^2.6.0",
     "handlebars": ">=4.3.0"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "license": "MIT"
 }
