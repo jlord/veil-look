@@ -1,5 +1,20 @@
 [
   {
+    "Title": "Intimations",
+    "Subtitle": "",
+    "Author": "Smith, Zadie",
+    "Published": "07/28/2020",
+    "Read": "10/30/2020",
+    "ReadCount": "",
+    "Audibook": "",
+    "Category": "Non Fiction",
+    "SubCategory": "Essays",
+    "Rating": "4",
+    "Pages": "112",
+    "CoverURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595815105l/54313380.jpg",
+    "GoodreadsURL": "https://www.goodreads.com/book/show/54313380-intimations"
+  },
+  {
     "Title": "Mrs. Dalloway",
     "Subtitle": "",
     "Author": "Woolf, Virgina ",
@@ -44,7 +59,7 @@
     "CoverURL": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427520356l/25233777.jpg",
     "GoodreadsURL": "https://www.goodreads.com/book/show/25233777-hampstead-heath-from-the-thomas-barratt-collection"
   },
-    {
+  {
     "Title": "Weather",
     "Subtitle": "",
     "Author": "Offill, Jenny",
