@@ -170,10 +170,11 @@ figcaption,
 
 .book {
   padding-right: 20px;
+  max-width: 200px;
+
 }
 
 .book img {
-  max-width: 200px;
 }
 
 .book-list-container {
