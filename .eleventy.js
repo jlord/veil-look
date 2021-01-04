@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
     passthroughFileCopy: true,
     dir: {
       input: "src",
-      output: "dist"
+      output: "build"
     }
   };
 };
