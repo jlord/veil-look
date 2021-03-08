@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jlord — How to Configure Your Blog</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.glitch.com/18e1b6c5-abb9-4483-a1ce-3c97822dcbc0%2Fsmile-favicon.png?v=1577657596580" type="image/png">
+  </head>
+  <body>
+    <header>
+      <p class="meta-text">Posted on 3/8/2021 </p>
+      <h1>How to Configure Your Blog</h1>
+    </header>
+
+    <p>This here that you are reading is a Glitch project, so to create your own blog that is identical,
+you just have to remix this. You can click this!</p>
+<a class="glitch-remix" href="https://glitch.com/edit/#!/remix/ballistic-piranha">
+  <img alt="Remix on Glitch" src="https://cdn.gomix.com/f3620a78-0ad3-4f81-a271-c8a4faa20f86%2Fremix-button.svg">
+</a>
+<h3>Add New Posts</h3>
+<p>All posts live in <code>src/</code>. There are 3 posts in this sample project:</p>
+<ul>
+<li><code>index.md</code>, the 🏡.</li>
+<li><code>instructions.md</code>, which you are reading right now.</li>
+<li><code>sample-post.md</code>, which is an example post that you can duplicate over and over again for new content.</li>
+</ul>
+<p>To create a new post, duplicate <code>sample-post.md</code> (<a href="https://glitch.com/edit/#!/ballistic-piranha?path=src/sample-post.md:7:107">link</a>),
+and start writing! This should automatically redeploy your site!</p>
+<h3>Customize it</h3>
+<p>This blog is written using <a href="https://www.11ty.io/">eleventy</a>, which is a static site generator. The docs are pretty helpful,
+but the TL; DR is:</p>
+<ul>
+<li>The &quot;look&quot; of the different pages is in <code>src/_includes/layouts</code>. There are two layouts in this project
+<ul>
+<li><code>home.njk</code>, used by the <code>index.md</code> post.</li>
+<li><code>post.njk</code>, used by all the other posts.</li>
+</ul>
+</li>
+<li>These are HTML + <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> files, and if you want your pages to look different,
+this is what you should modify.</li>
+<li>The styles come from <code>css/style.css</code>.</li>
+</ul>
+<h2>Webring</h2>
+<p><a href="https://en.wikipedia.org/wiki/Webring">Webrings</a> are websites linked together. You know, your internet friends.</p>
+<p>We use <a href="https://support.glitch.com/t/get-organized-with-collections/8038">Glitch collections</a> to add your friends' blogs to your webring.</p>
+<ol>
+<li>Create a Glitch collection.</li>
+<li>Add its name to <code>src/_data/siteData.json</code> (<a href="https://glitch.com/edit/#!/ballistic-piranha?path=src/_data/siteData.json:3:19">link</a>),
+in the &quot;collection&quot; field. For example, the
+collection we're using in this sample is at <a href="https://glitch.com/@jlord/frands%22">glitch.com/@jlord/frands</a>,
+so we added <code>&quot;collection&quot;: &quot;notwaldorf/frands&quot;</code> to the config file.</li>
+<li>Start adding projects to that collection!</li>
+<li>That's it! The projects will be automatically populated (if you're interested, that code is
+<a href="https://glitch.com/edit/#!/ballistic-piranha?path=src/_data/friends.js:11:6">here</a>).</li>
+</ol>
+
+
+    <footer>
+      <small>
+        <a href="/">Home</a> | <a href="/feed.xml">RSS</a> | <em>Made by <a href="/about">jlord</a> on <a href="https://glitch.com/edit/#!/veil-look">Glitch</a></em>.
+        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+    </small>
+    </footer>
+  </body>
+</html>
