@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jlord — {{ title }}</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://cdn.glitch.com/18e1b6c5-abb9-4483-a1ce-3c97822dcbc0%2Fsmile-favicon.png?v=1577657596580" type="image/png">
   </head>
@@ -16,7 +16,7 @@
 
     {{ content | safe }}
 
-    <h2 id="book-shelf">2020 Currently Reading Shelf</h2>
+    <h2 id="book-shelf">Shelf</h2>
     <div class="book-shelf-container">
       {%- for book in current_books -%}
       <div class="book">
@@ -28,7 +28,7 @@
       {%- endfor -%}
     </div>
 
-    <h2 id="book-list">2020 Currently Reading List</h2>
+    <h2 id="book-list">List</h2>
     <div class="book-list-container">
       <table>
         <thead>
