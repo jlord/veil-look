@@ -6,6 +6,8 @@ date: 2019-12-31
 
 I set a goal of reading 12 books in 2019 and I read 19—how about that! There's a [shelf view](#book-shelf), then some ramblings on what I liked, then a [list view](#book-list) and lastly, a [how-to](#how-to-books), if you want to make a book page, too.
 
+See [here for 2021]({{ '/posts/2021-books' | url }}), [here for 2020]({{ '/posts/2020-books' | url }})
+
 <h3 id="book-shelf">2019 Shelf</h2>
 <div class="book-shelf-container">
   {%- for book in books -%}
