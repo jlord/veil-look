@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jlord — {{ title }}</title>
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://cdn.glitch.com/18e1b6c5-abb9-4483-a1ce-3c97822dcbc0%2Fsmile-favicon.png?v=1577657596580" type="image/png">
   </head>
@@ -46,7 +46,7 @@
       </table>
     </div>
 
-    <h2 id="how-to-books">How this Page is Made</h2>
+   <h2 id="how-to-books">How this Page is Made</h2>
     <p>I use <a href="https://www.goodreads.com/user/show/768192-jlord" target="_blank">Goodreads</a> to keep track of books I've read but their API is not stellar and they can't provide links to cover images which is a must-have for a shelf view. Since I don't read at breakneck speeds I just made a <a href="https://docs.google.com/spreadsheets/d/1tJtKdvCWCLLv9mZwTFjSXM6t2mMfPHgkhtWJDBdpjYc/edit?usp=sharing" target="_blank">spreadsheet</a> myself with information from my Goodreads data and links to cover art.</p>
 
     <p>That spreadsheet is turned into JSON via my <a href="https://spreadsheet.glitch.me" target="_blank">tool</a> that does the spreadsheet-to-JSON conversion for you. This site is built with <a href="https://www.11ty.dev" target="_blank">Eleventy</a> so there is a layout template for this Books page you are viewing, it uses the data in the JSON file. You can go directly to that template and <a href="https://glitch.com/edit/#!/veil-look?path=src/_includes/layouts/books.njk" target="_blank">see the code on Glitch</a>.</p>
