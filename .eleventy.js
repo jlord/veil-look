@@ -13,7 +13,6 @@ module.exports = function(eleventyConfig) {
 
   return {
     passthroughFileCopy: true,
-    pathPrefix: "/veil-look/",
     dir: {
       input: "src",
       output: "docs"

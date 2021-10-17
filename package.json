@@ -13,6 +13,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "eleventy",
+    "prefix": "npx @11ty/eleventy --pathprefix=veil-look",
     "deploy": "eleventy && http-server dist/",
     "dev": "eleventy --serve",
     "start": "npm run deploy"
