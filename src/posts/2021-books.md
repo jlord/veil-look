@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: 2021 Books
 date: 2021-05-05
 ---
-Books I read in 2021. See [here for 2019](/posts/2019-books), [here for 2020](/posts/2020-books).
+Books I read in 2021. See [here for 2019]({{ '/posts/2019-books' | url }}), [here for 2020]({{ '/posts/2020-books' | url }}).
 
 <h3 id="book-shelf">2021 Shelf</h2>
 
