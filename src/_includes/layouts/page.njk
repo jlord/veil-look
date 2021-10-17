@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jlord — {{ title }}</title>
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="{{ '/css/style.css' | url }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Code+Pro:600|Source+Sans+Pro:700,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://cdn.glitch.com/18e1b6c5-abb9-4483-a1ce-3c97822dcbc0%2Finitials-favicon.png?v=1577657596621" type="image/png">
   </head>
@@ -18,8 +18,8 @@
 
     <footer>
       <small>
-        <a href="/">Home</a> | <a href="/feed.xml">RSS</a> | <em>Made by <a href="/about">jlord</a> on <a href="https://glitch.com/edit/#!/veil-look">Glitch</a></em>.
-        <em>See my <a href="/webring/">webring of friends's sites</a>.</em>
+        <a href="/">Home</a> | <a href="{{ '/feed.xml' | url }}">RSS</a> | <em>Made by <a href="{{ '/about' | url }}">jlord</a> on <a href="https://glitch.com/edit/#!/veil-look">Glitch</a></em>.
+        <em>See my <a href="{{ '/webring/' | url }}">webring of friends's sites</a>.</em>
     </small>
     </footer>
   </body>

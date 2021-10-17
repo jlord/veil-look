@@ -14,7 +14,7 @@
   "scripts": {
     "build": "eleventy --pathprefix=/veil-look",
     "deploy": "eleventy --pathprefix=/veil-look && http-server dist/",
-    "dev": "eleventy --serve",
+    "dev": "eleventy --pathprefix=/veil-look --serve",
     "start": "npm run deploy"
   },
   "dependencies": {
