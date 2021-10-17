@@ -17,7 +17,7 @@ Books I read in 2021. See [here for 2019](/posts/2019-books), [here for 2020](/p
   {%- endfor -%}
 </div>
 
-<h3 id="book-shelf">2020 List</h2>
+<h3 id="book-shelf">2021 List</h2>
 
 <div class="book-list-container">
   <table>
@@ -27,7 +27,7 @@ Books I read in 2021. See [here for 2019](/posts/2019-books), [here for 2020](/p
       </tr>
     </thead>
     <tbody>
-      {%- for book in 2020Books -%}
+      {%- for book in current_books -%}
       <tr>
         <td class="table-row-number"></td><td><a href="{{ book.GoodreadsURL }}">{{ book.Title }}</a></td><td>{{ book.Author }}</td><td>{{ book.Read }}</td><td>{{ book.Category }} <span class="meta-text">{{ book.SubCategory }}</span></td><td class="center">{{ book.Pages }}</td>
       </tr>
